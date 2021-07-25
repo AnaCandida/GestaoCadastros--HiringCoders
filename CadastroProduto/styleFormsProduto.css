@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+  --body-bkg--light: #b5bbbe;
+  --body-bkg--dark: #212226;
+  --header--font: #b5bbbe;
+  --header--icon: #15cdcb;
+  --input-border--claro: #e0dede;
+  --button-bkg: #5280e2;
+  --button-font: #5280e2;
+  --footer-font: #b5bbbe;
+  --footer-link: #800080;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 280px) {
+  .c-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .c-form h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--button-font);
+  }
+
+  .c-input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .c-input input {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .btn_smal {
+    height: 2rem;
+    width: 8rem;
+  }
+
+  .clientes {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 1.2rem;
+  }
+
+  form input {
+    border-radius: 15px;
+    height: 2rem;
+    width: 2.5rem;
+    padding: 10px;
+  }
+
+.c-tab_produtos {
+    visibility: hidden;
+  }
+
+  .voltar {
+    width: 5rem;
+    background-color: var(--body-bkg--light);
+    margin: 20px 0 20px 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  .c-main {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 80px;
+    height: 65vh;
+  }
+  .c-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--body-bkg--light);
+    width: 450px;
+    height: 370px;
+    border-radius: 20px;
+    
+  }
+  .c-form input {
+    width: 300px;
+  }
+  .c-form h3 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--button-font);
+
+  }
+  
+  .c-tab_produtos {
+    visibility: visible;
+    margin-left: 150px;
+    width: 800px;
+    
+  }
+
+  th {
+    background-color: var(--header--icon);
+    width: 100px; 
+  }
+
+  .voltar {
+    width: 5rem;
+    background-color: var(--body-bkg--light);
+    margin: 20px 0 20px 0;
+    position: relative;
+    left:237px;
+    top: -80px;
+  }
+  
+  .voltar {
+    width: 5rem;
+    background-color: var(--body-bkg--light);
+    margin: 20px 0 20px 0;
+    position: relative;
+    top:-20px;
+    left: 250px;
+  }
+}

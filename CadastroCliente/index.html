@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta
+      name="description"
+      content="Desafio#2 - Hiring coders: Gestão de Cadastros"
+    />
+    <meta name="author" content="Design and coded by Ana Quadros" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="/style.css" rel="stylesheet" />
+    <link href="styleFormsCliente.css" rel="stylesheet"/>
+
+    <title>Cadastro Clientes</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="icon" type="image/svg" href="/Assets/Favicon.svg" />
+  </head> 
+
+  <body>
+    <header role="heading">
+      <i data-feather="archive"></i>
+
+      <h3 role="text">Gestão de Cadastros</h3>
+      <hr />
+    </header>
+    <main role="text">
+      <div class="c-main clientes">
+        <form class="c-form">
+          <h3>Cadastro de Clientes</h3>
+          <div class="c-input">
+            <input id="nome" type="text" placeholder="Nome completo" required/>
+
+            <input id="endereco" type="text" placeholder="Endereço" required />
+            <input id="complemento" type="text" placeholder="Complemento" required />
+            <input id="bairro" type="text" placeholder="Bairro" required />
+            <input id="cep" type="number" placeholder="CEP" required />
+
+            <input id="cidade" type="text" placeholder="Cidade" required />
+            <input id="estado" type="text" placeholder="Estado" required/>
+
+            <input id="cpf" type="number" placeholder="CPF" required/>
+
+            <input id="email" type="text" placeholder="Email" required/>
+
+            <input id="telefone" type="tel" placeholder="Telefone" required/>
+          </div>
+          <input type="submit" class="c_button" value="Cadastrar Cliente">
+        </form>
+        <table class="c-tab_clientes">
+          <thread >
+            <th>Nome</th>
+            <th>Endereço</th>
+            <th>CEP</th>
+            <th>Cidade</th>
+            <th>Estado</th>
+            <th>CPF</th>
+            <th>Email</th>
+            <th>Telefone</th>
+          </thread>
+          <tbody id="tab_clientes">          
+          </tbody>
+        </table>
+      </main>
+        <a href="/index.html"link">
+          <button role="link" class="c_button btn_smal voltar"> Voltar </button>
+        </a>
+      </div>
+    
+    <footer role="text" class="c-footer ">
+      <p role="text">
+        Design and coded by
+        <a
+          href="https://www.linkedin.com/in/anacandidaquadros/"
+          target="blank"
+          role="link"
+          >Ana Quadros</a
+        >
+      </p>
+    </footer>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

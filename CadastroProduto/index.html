@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta
+      name="description"
+      content="Desafio#2 - Hiring coders: Gestão de Cadastros"
+    />
+    <meta name="author" content="Design and coded by Ana Quadros" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="/style.css" rel="stylesheet" />
+    <link href="/CadastroProduto/styleFormsProduto.css" rel="stylesheet"/>
+    <title>Cadastro Clientes</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="icon" type="image/svg" href="/Assets/Favicon.svg" />
+  </head> 
+
+  <body>
+    <header role="heading">
+      <i data-feather="archive"></i>
+
+      <h3 role="text">Gestão de Cadastros</h3>
+      <hr />
+    </header>
+    <main role="text">
+      <div class="c-main clientes">
+        <form class="c-form">
+          <h3>Cadastro de Produtos</h3>
+          <div class="c-input">
+
+
+            <input type="password" placeholder="Categoria" />
+            <input type="password" placeholder="Nome do Produto" />
+            <input type="password" placeholder="Marca do Produto" />
+            <input type="password" placeholder="Quantidade" />
+
+          </div>
+          <button type="submit" class="c_button btn_smal">Cadastar</button>
+        </form>
+        <table class="c-tab_produtos">
+          <thread>
+            <th>Categoria</th>
+            <th>Nome do Produto</th>
+            <th>Marca do Produto</th>
+            <th>Quantidade</th>
+            
+          </thread>
+          <tbody id="tab_produtos">          
+          </tbody>
+        </table>
+      </main>
+        <a href="/index.html"link">
+        <button role="link" class="c_button btn_smal voltar"> Voltar </button>
+        </a>
+      </div>
+    
+    <footer role="text" class="c-footer ">
+      <p role="text">
+        Design and coded by
+        <a
+          href="https://www.linkedin.com/in/anacandidaquadros/"
+          target="blank"
+          role="link"
+          >Ana Quadros</a
+        >
+      </p>
+    </footer>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

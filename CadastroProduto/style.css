@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+  --body-bkg--light: #b5bbbe;
+  --body-bkg--dark: #212226;
+  --header--font: #b5bbbe;
+  --header--icon: #15cdcb;
+  --input-border--claro: #e0dede;
+  --button-bkg: #5280e2;
+  --button-font: #5280e2;
+  --footer-font: #b5bbbe;
+  --footer-link: #800080;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*========================WIDTH 280===============================*/
+
+@media (min-width: 280px) {
+  body {
+    background-color: var(--body-bkg--dark);
+    height: 100vh;
+  }
+
+  header {
+    text-align: center;
+    height: 20vh;
+    width: 100vw;
+    background-color: var(--body-bkg--lightt);
+  }
+  header h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    color: var(--header--font);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  body > header > svg {
+    color: var(--header--icon);
+    border: 1px solid var(--header--icon);
+    height: 40px;
+    width: 40px;
+    padding: 6px;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+
+  .c-main {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 1.2rem;
+  }
+
+  .c_button {
+    background-color: var(--button-bkg);
+    height: 3rem;
+    width: 12rem;
+    border-radius: 20px;
+    border: 2px solid var(--inputs--border);
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 10px;
+  }
+
+  .c_button:hover {
+    box-shadow: 10px 5px 5px black;
+  }
+
+  textarea:focus,
+  input:focus,
+  select:focus {
+    box-shadow: 0 0 0 0;
+    border: 2px solid var(--header--icon);
+    outline: 0;
+  }
+
+  .c-footer {
+    height: 5px;
+    text-align: center;
+    color: var(--body-bkg--light);
+    font-size: 0.8rem;
+    position: relative;
+    bottom: 0;
+  }
+
+  footer a {
+    color: var(--header--icon);
+  }
+}
+
+/*=========================TABLET===============================*/
+
+@media (min-width: 700px) {
+}
+
+/*=========================DESKTOP===============================*/
+
+@media (min-width: 1400px) {
+  header {
+    text-align: center;
+    height: 20vh;
+    width: 100vw;
+    background-color: var(--body-bkg--lightt);
+  }
+  header h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    color: var(--header--font);
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  body > header > svg {
+    color: var(--header--icon);
+    border: 1px solid var(--header--icon);
+    height: 60px;
+    width: 60px;
+    padding: 8px;
+    border-radius: 50%;
+    margin-top: 30px;
+  }
+  .c-main {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 80px;
+  }
+}
