@@ -27,41 +27,37 @@
     </header>
     <main role="text">
       <div class="c-main clientes">
-        <form class="c-form">
+        <form class="c-form" id="form">
           <h3>Cadastro de Clientes</h3>
           <div class="c-input">
-            <input id="nome" type="text" placeholder="Nome completo" required/>
+            <label for="Nome">Nome Completo:</label>
+            <input type="text" id="nome" name="Nome" required />
 
-            <input id="endereco" type="text" placeholder="Endereço" required />
-            <input id="complemento" type="text" placeholder="Complemento" required />
-            <input id="bairro" type="text" placeholder="Bairro" required />
-            <input id="cep" type="number" placeholder="CEP" required />
+            <label for="Endereço">Endereço:</label>
+            <input type="text" id="endereco" name="Endereço" required />      
 
-            <input id="cidade" type="text" placeholder="Cidade" required />
-            <input id="estado" type="text" placeholder="Estado" required/>
+            <label for="Cep">Cep:</label>
+            <input type="number" id="cep" name="Cep" required />
 
-            <input id="cpf" type="number" placeholder="CPF" required/>
+            <label for="Cidade">Cidade:</label>
+            <input type="text" id="cidade" name="Cidade" required />
 
-            <input id="email" type="text" placeholder="Email" required/>
+            <label for="Estadp">Estado:</label>
+            <input type="text" id="estado" name="Estado"required />
 
-            <input id="telefone" type="tel" placeholder="Telefone" required/>
+            <label for="cpf">CPF:</label>
+            <input type="number" id="cpf" name="cpf" required />
+
+            <label for="Email">Email:</label>
+            <input type="email" id="email" name="Email" required />
+
+            <label for="Telefone">Telefone:</label>
+            <input type="number" id="telefone" name="Telefone" required />
+
           </div>
           <input type="submit" class="c_button" value="Cadastrar Cliente">
         </form>
-        <table class="c-tab_clientes">
-          <thread >
-            <th>Nome</th>
-            <th>Endereço</th>
-            <th>CEP</th>
-            <th>Cidade</th>
-            <th>Estado</th>
-            <th>CPF</th>
-            <th>Email</th>
-            <th>Telefone</th>
-          </thread>
-          <tbody id="tab_clientes">          
-          </tbody>
-        </table>
+        
       </main>
         <a href="/index.html"link">
           <button role="link" class="c_button btn_smal voltar"> Voltar </button>
@@ -83,4 +79,6 @@
       feather.replace();
     </script>
   </body>
+  <script type="text/javascript" src="script.js"></script>
+
 </html>

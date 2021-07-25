@@ -12,9 +12,11 @@
 
     <link href="/style.css" rel="stylesheet" />
     <link href="/CadastroProduto/styleFormsProduto.css" rel="stylesheet"/>
-    <title>Cadastro Clientes</title>
+    
     <script src="https://unpkg.com/feather-icons"></script>
     <link rel="icon" type="image/svg" href="/Assets/Favicon.svg" />
+
+    <title>Cadastro Produtos</title>
   </head> 
 
   <body>
@@ -25,38 +27,35 @@
       <hr />
     </header>
     <main role="text">
-      <div class="c-main clientes">
-        <form class="c-form">
+      <div class="c-main">
+        <form class="c-form" id="form">
           <h3>Cadastro de Produtos</h3>
           <div class="c-input">
-
-
-            <input type="password" placeholder="Categoria" />
-            <input type="password" placeholder="Nome do Produto" />
-            <input type="password" placeholder="Marca do Produto" />
-            <input type="password" placeholder="Quantidade" />
-
-          </div>
-          <button type="submit" class="c_button btn_smal">Cadastar</button>
-        </form>
-        <table class="c-tab_produtos">
-          <thread>
-            <th>Categoria</th>
-            <th>Nome do Produto</th>
-            <th>Marca do Produto</th>
-            <th>Quantidade</th>
             
-          </thread>
-          <tbody id="tab_produtos">          
-          </tbody>
-        </table>
+            <label for="Categoria">Categoria:</label>
+            <input type="text" id="categoria" name="Categoria" required />
+
+            <label for="Nome">Nome do produto:</label>
+            <input type="text" id="nome" name="Nome" required />
+
+            <label for="Marca">Marca:</label>
+            <input type="text" id="marca" name="Marca"required />
+
+            <label for="Quantidade">Quantidade:</label>
+            <input type="text" id="quantidade" name="Quantidade" required />
+
+          <div>
+            <input type="submit" class="c_button" value="submit">
+        </form>
+        
+        
       </main>
         <a href="/index.html"link">
         <button role="link" class="c_button btn_smal voltar"> Voltar </button>
         </a>
       </div>
     
-    <footer role="text" class="c-footer ">
+    <footer role="text" class="c-footer responsivo ">
       <p role="text">
         Design and coded by
         <a
@@ -71,4 +70,6 @@
       feather.replace();
     </script>
   </body>
+  <script type="text/javascript" src="script.js"></script>
+  
 </html>

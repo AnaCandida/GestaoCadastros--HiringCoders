@@ -24,10 +24,20 @@ a {
 }
 
 @media (min-width: 280px) {
+  .c-main{
+    height: 60vh;
+  }
+  
   .c-form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--body-bkg--light);
+    border-radius: 20px;
+    justify-content: center;
+    width: 17.5rem;
+    height: 24.125rem;
+
   }
 
   .c-form h3 {
@@ -51,14 +61,7 @@ a {
     width: 8rem;
   }
 
-  .clientes {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    padding-top: 1.2rem;
-  }
+   
 
   form input {
     border-radius: 15px;
@@ -67,15 +70,23 @@ a {
     padding: 10px;
   }
 
-.c-tab_produtos {
-    visibility: hidden;
-  }
+
 
   .voltar {
     width: 5rem;
     background-color: var(--body-bkg--light);
     margin: 20px 0 20px 0;
+    position: relative;
+    left: 8.5rem;
+    
   }
+
+  .responsivo{
+    height: 20px;
+    position: relative;
+    bottom: -30px;
+  }
+
 }
 
 @media (min-width: 1400px) {
@@ -94,7 +105,7 @@ a {
     align-items: center;
     background-color: var(--body-bkg--light);
     width: 450px;
-    height: 370px;
+    height: 450px;
     border-radius: 20px;
     
   }
@@ -107,34 +118,13 @@ a {
     color: var(--button-font);
 
   }
-  
-  .c-tab_produtos {
-    visibility: visible;
-    margin-left: 150px;
-    width: 800px;
-    
-  }
-
-  th {
-    background-color: var(--header--icon);
-    width: 100px; 
-  }
-
+ 
   .voltar {
     width: 5rem;
     background-color: var(--body-bkg--light);
     margin: 20px 0 20px 0;
     position: relative;
-    left:237px;
-    top: -80px;
-  }
-  
-  .voltar {
-    width: 5rem;
-    background-color: var(--body-bkg--light);
-    margin: 20px 0 20px 0;
-    position: relative;
-    top:-20px;
-    left: 250px;
+    bottom:-50px;
+    left: 720px;
   }
 }
